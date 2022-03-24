@@ -118,7 +118,6 @@ main .intro {
 #about {
   background-color: #c5c0b8;
   padding: 20px 0 30px 0;
-  margin: 120px 0;
 }
 #contact {
   text-align: center;
@@ -126,31 +125,34 @@ main .intro {
 
 /* footer */
 footer {
-  background-color: inherit;
   width: 100%;
-  padding: 50px 0;
+  background-color: #c5c0b8;
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+footer > ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-left: -40px;
+}
+.btn {
   align-items: center;
-}
-
-footer .footer__top {
-  width: 55%;
-  margin: 0 auto;
-  color: white;
+  background-color: rgba(240, 240, 240, 0.26);
+  border: 1px solid #dfdfdf;
+  border-radius: 16px;
+  color: #000000;
+  cursor: pointer;
   display: flex;
-  justify-items: center;
-  height: 10vh;
-}
-
-footer .footer__top ul {
+  font-family: inherit;
+  font-size: 25px;
+  justify-content: center;
+  line-height: 28px;
+  max-width: 100%;
+  padding: 14px 20px;
+  text-decoration: none;
+  user-select: none;
+  touch-action: manipulation;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-footer .footer__top ul a {
-  margin-right: 30px;
-  font-size: 35px;
 }
